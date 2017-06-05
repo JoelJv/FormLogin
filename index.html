@@ -10,10 +10,28 @@
 <link href="https://fonts.googleapis.com/css?family=LAto:400,900" rel="stylesheet">
 
 <link rel="stylesheet" href="css/main.css">
-
+<title>Login</title>
 <!--Formulario de login con HTML y CSS-->
-<body>
 
+<body>
+	<!--Este es el contenedor del formulario -->
+	<div class="login_container">
+		<!--Este es tendra dentro la imagen del formulario-->
+		<div class="login_top">
+			<img class="login_img" src=" ./img/pokemoneda.png" alt="">
+      <h2 class="login_title">Form<span>Name</span></h2>
+		</div>
+
+	<form class="login_form">
+		<!--Aqui utilize required, para que sea forzoso ingresar algo, autofocus es para
+	que al recargar la pagina se ponga en focus el campo -->
+		<input type="text" placeholder="&#128100; username" required autofocus>
+		<input type="password" placeholder="&#x1F512; password" required>
+		<input class="btn_submit" type="submit" value="ENTRAR">
+		<!--Esto nos envia a la pagina que establescamos para recuperar al contraseña-->
+		<a class="form_recover" href="">Olvidaste la contraseña?</a>
+	</form>
+	</div>
 
 </body>
 
